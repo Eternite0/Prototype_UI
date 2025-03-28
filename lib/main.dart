@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,85 +15,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.white),
-        title: const Text("Main",
-          style: TextStyle(
-            fontSize: 25,
-            color: Colors.white
-          ),
-        ),
-        backgroundColor: Colors.blue,
-        centerTitle: true,
-      ),
-      drawer: const NavigationDrawer(),
-    );
-}
-
-class NavigationDrawer extends StatelessWidget {
-  const NavigationDrawer({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) => Drawer(
-    child: SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          buildHeader(context),
-          buildMenuItems(context),
-        ],
-      ),
-    ),
-  );
-
-  Widget buildHeader(BuildContext context) => Container(
-    padding: EdgeInsets.only(
-      top: MediaQuery.of(context).padding.top,
-    ),
-  );
-
-  Widget buildMenuItems(BuildContext context) => Column(
-    children: [
-      ListTile(
-        leading: const Icon(Icons.home_outlined),
-        title: const Text("Main"),
-        onTap: () {},        
-      ),
-      ListTile(
-        leading: const Icon(Icons.auto_awesome_motion_outlined),
-        title: const Text("Subpage : 1"),
-        onTap: () {},        
-      ),
-      ListTile(
-        leading: const Icon(Icons.auto_awesome_motion_outlined),
-        title: const Text("Subpage : 2"),
-        onTap: () {},        
-      ),
-      ListTile(
-        leading: const Icon(Icons.auto_awesome_motion_outlined),
-        title: const Text("Subpage : 3"),
-        onTap: () {},        
-      ),
-      ListTile(
-        leading: const Icon(Icons.auto_awesome_motion_outlined),
-        title: const Text("Subpage : 4"),
-        onTap: () {},        
-      ),
-      ListTile(
-        leading: const Icon(Icons.auto_awesome_motion_outlined),
-        title: const Text("Subpage : 5"),
-        onTap: () {},        
-      ),
-    ],
-  );
-}
-
-
-
-
