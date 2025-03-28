@@ -1,5 +1,40 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: const HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) => Scaffold(
+      appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.white),
+        title: const Text("Main",
+          style: TextStyle(
+            fontSize: 25,
+            color: Colors.white
+          ),
+        ),
+        backgroundColor: Colors.blue,
+        centerTitle: true,
+      ),
+      drawer: const NavigationDrawer(),
+    );
+}
+
 class NavigationDrawer extends StatelessWidget {
   const NavigationDrawer({Key? key}) : super(key: key);
 
@@ -58,22 +93,6 @@ class NavigationDrawer extends StatelessWidget {
   );
 }
 
-void main() {
-  runApp(MaterialApp(
-    home: Scaffold(
-      appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.white),
-        title: const Text("Main",
-          style: TextStyle(
-            fontSize: 25,
-            color: Colors.white
-          ),
-        ),
-        backgroundColor: Colors.blue,
-        centerTitle: true,
-      ),
-      drawer: const NavigationDrawer(),
-    ),
-  ));
-}
+
+
 
