@@ -35,7 +35,7 @@ class NavigationDrawer extends StatelessWidget {
         title: const Text("SubPage : 1"),
         onTap: () {
           Navigator.pop(context);  
-          Navigator.of(context).push(MaterialPageRoute(
+          Navigator.of(context).pushReplacement(MaterialPageRoute(
             builder: (context) => const SubPage1()
           ));
         }        
@@ -45,7 +45,7 @@ class NavigationDrawer extends StatelessWidget {
         title: const Text("SubPage : 2"),
         onTap: () {
           Navigator.pop(context);    
-          Navigator.of(context).push(MaterialPageRoute(
+          Navigator.of(context).pushReplacement(MaterialPageRoute(
             builder: (context) => const SubPage2()
           ));
         },        
@@ -55,7 +55,7 @@ class NavigationDrawer extends StatelessWidget {
         title: const Text("SubPage : 3"),
         onTap: () {
           Navigator.pop(context);    
-          Navigator.of(context).push(MaterialPageRoute(
+          Navigator.of(context).pushReplacement(MaterialPageRoute(
             builder: (context) => const SubPage3()
           ));
         },        
@@ -65,7 +65,7 @@ class NavigationDrawer extends StatelessWidget {
         title: const Text("SubPage : 4"),
         onTap: () {
           Navigator.pop(context);    
-          Navigator.of(context).push(MaterialPageRoute(
+          Navigator.of(context).pushReplacement(MaterialPageRoute(
             builder: (context) => const SubPage4()
           ));
         },        
@@ -75,7 +75,7 @@ class NavigationDrawer extends StatelessWidget {
         title: const Text("SubPage : 5"),
         onTap: () {
           Navigator.pop(context);    
-          Navigator.of(context).push(MaterialPageRoute(
+          Navigator.of(context).pushReplacement(MaterialPageRoute(
             builder: (context) => const SubPage5()
           ));
         },        
