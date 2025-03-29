@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:lightapp/PageItem/SubPage1.dart';
 import 'PageItem/HomePage.dart';
+import 'PageItem/SubPage1.dart';
 
 class NavigationDrawer extends StatelessWidget {
   const NavigationDrawer({Key? key}) : super(key: key);
@@ -123,6 +125,7 @@ class SubPage1 extends StatelessWidget {
         centerTitle: true,
       ),
       drawer: const NavigationDrawer(),
+      body: const SubPageItem1(),
     );
 }
 

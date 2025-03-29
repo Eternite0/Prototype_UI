@@ -4,10 +4,11 @@ class HomeItem extends StatefulWidget {
   const HomeItem({super.key});
 
   @override
-  State<HomeItem> createState() => _MyWidgetState();
+  State<HomeItem> createState() => _HomeItemState();
 }
 
-class _MyWidgetState extends State<HomeItem> {
+class _HomeItemState extends State<HomeItem> {
+
   double ScreenWidth = 0;
   double ScreenHeight = 0;
   double SliderWidth = 0;
@@ -15,6 +16,7 @@ class _MyWidgetState extends State<HomeItem> {
 
   @override
   Widget build(BuildContext context) {
+    
     ScreenWidth = MediaQuery.of(context).size.width;
     ScreenHeight = MediaQuery.of(context).size.height;
     SliderWidth = ScreenWidth * 0.8;
