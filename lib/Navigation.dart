@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'PageItem/HomePage.dart';
 
 class NavigationDrawer extends StatelessWidget {
   const NavigationDrawer({Key? key}) : super(key: key);
@@ -101,6 +102,7 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
       ),
       drawer: const NavigationDrawer(),
+      body: const HomeItem(),
     );
 }
 
