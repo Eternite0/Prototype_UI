@@ -137,7 +137,7 @@ class _HomeItemState extends State<HomeItem> {
                               Icon(Icons.info_outline, color: Colors.white),
                               SizedBox(width: 20),
                               Text(
-                                'You pressed button',
+                                'Mode : Auto',
                                 style: TextStyle(
                                     fontSize: 20, color: Colors.white),
                               )
@@ -146,7 +146,7 @@ class _HomeItemState extends State<HomeItem> {
                         ));
                       },
                       child: const Text(
-                        'Button/Pressed',
+                        'Auto',
                         style: TextStyle(fontSize: 20, color: Colors.white),
                       ))
                 ],
@@ -159,22 +159,13 @@ class _HomeItemState extends State<HomeItem> {
                     style: FilledButton.styleFrom(backgroundColor: Colors.blue),
                     onPressed: () {},
                     child: Text(
-                      "Button",
+                      "Time sync.",
                       style: TextStyle(
                         fontSize: 20,
                         color: Colors.white,
                       ),
                     )),
-                FilledButton(
-                    style: FilledButton.styleFrom(backgroundColor: Colors.blue),
-                    onPressed: () {},
-                    child: Text(
-                      "Change",
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.white,
-                      ),
-                    ))
+        
               ],
             )
           ],
