@@ -181,6 +181,7 @@ class SliderPage1 extends StatelessWidget {
           centerTitle: true,
         ),
         drawer: const NavigationDrawer(),
+        body: const SliderPageItem1(),
       );
 }
 
