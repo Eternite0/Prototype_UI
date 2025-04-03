@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:lightapp/PageItem/SubPage1.dart';
 import 'PageItem/HomePage.dart';
 import 'PageItem/SubPage1.dart';
+import 'PageItem/SubPage2.dart';
+import 'PageItem/SubPage3.dart';
+import 'PageItem/SubPage4.dart';
+import 'PageItem/SubPage5.dart';
 
 class NavigationDrawer extends StatelessWidget {
   const NavigationDrawer({Key? key}) : super(key: key);
@@ -200,6 +203,7 @@ class SubPage2 extends StatelessWidget {
           centerTitle: true,
         ),
         drawer: const NavigationDrawer(),
+        body: const SubPageItem2(),
       );
 }
 
@@ -218,6 +222,7 @@ class SliderPage2 extends StatelessWidget {
           centerTitle: true,
         ),
         drawer: const NavigationDrawer(),
+        body: const SliderPageItem2(),
       );
 }
 
@@ -236,6 +241,7 @@ class SubPage3 extends StatelessWidget {
           centerTitle: true,
         ),
         drawer: const NavigationDrawer(),
+        body: const SubPageItem3(),
       );
 }
 
@@ -254,6 +260,7 @@ class SliderPage3 extends StatelessWidget {
           centerTitle: true,
         ),
         drawer: const NavigationDrawer(),
+        body: const SliderPageItem3(),
       );
 }
 
@@ -272,6 +279,7 @@ class SubPage4 extends StatelessWidget {
           centerTitle: true,
         ),
         drawer: const NavigationDrawer(),
+        body: const SubPageItem4(),
       );
 }
 
@@ -290,6 +298,7 @@ class SliderPage4 extends StatelessWidget {
           centerTitle: true,
         ),
         drawer: const NavigationDrawer(),
+        body: const SliderPageItem4(),
       );
 }
 
@@ -308,6 +317,7 @@ class SubPage5 extends StatelessWidget {
           centerTitle: true,
         ),
         drawer: const NavigationDrawer(),
+        body: const SubPageItem5(),
       );
 }
 
@@ -326,5 +336,6 @@ class SliderPage5 extends StatelessWidget {
           centerTitle: true,
         ),
         drawer: const NavigationDrawer(),
+        body: SliderPageItem5(),
       );
 }
